@@ -14,6 +14,9 @@ server-oracle/
 *.local
 *.dev
 .env.local
+*.env
+database.env
+secrets.*
 
 # API keys and credentials
 *.key
