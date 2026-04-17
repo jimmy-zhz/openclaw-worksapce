@@ -1,9 +1,0 @@
-machine: mac
-hostname: Jimmy-MacBook-Pro.local
-role: master
-capabilities: gui, browser, local_files, personal_assistant
-openclaw_port: 18790
-access_methods: web_ui
-owner: James Zhao (Jimmy)
-location: Winnipeg, Canada
-created: 2026-04-17

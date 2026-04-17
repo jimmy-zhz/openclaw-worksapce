@@ -6,9 +6,9 @@ memory/
 openclaw.json
 update-check.json
 
-# Machine-specific configurations (can be committed if non-sensitive)
-# local-mac/secrets/
-# server-oracle/secrets/
+# Machine-specific directories (local-only, not synced)
+local-mac/
+server-oracle/
 
 # Local development files
 *.local
