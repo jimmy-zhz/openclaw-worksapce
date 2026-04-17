@@ -6,6 +6,15 @@ memory/
 openclaw.json
 update-check.json
 
+# Machine-specific configurations (can be committed if non-sensitive)
+# local-mac/secrets/
+# server-oracle/secrets/
+
+# Local development files
+*.local
+*.dev
+.env.local
+
 # API keys and credentials
 *.key
 *.pem
