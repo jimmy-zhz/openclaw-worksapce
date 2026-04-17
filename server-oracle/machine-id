@@ -1,0 +1,9 @@
+machine: server
+hostname: oracle-cloud-server
+role: slave
+capabilities: computation, 24/7, heavy_processing, api_serving
+resources: 4_cores, 24gb_ram
+access_methods: telegram, ssh
+owner: James Zhao (Jimmy)
+purpose: data_processing, model_training, always_on_tasks
+created: 2026-04-17
