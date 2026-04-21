@@ -94,10 +94,24 @@ This file contains custom rules, preferences, and protocols established by Jimmy
 - [ ] **Tool limitations:** Known limitations or issues with specific tools
 
 ### 4.2 Execution Rules
-- [ ] **Command safety:** Rules for executing system commands
-- [ ] **File operations:** Rules for creating, modifying, or deleting files
-- [ ] **Git operations:** Rules for Git commits, pushes, and branch management
-- [ ] **Process management:** Rules for running background processes
+- [x] **Command safety:** Rules for executing system commands
+  - **Agentic Task Execution Protocol:** For any multi-step or complex task (where planning is necessary), do not execute immediately.
+  - **Required Process:**
+    1. First, provide a clear and detailed execution plan, including steps and expected outcomes.
+    2. Explicitly request execution approval.
+    3. Only proceed when the user explicitly confirms (e.g., says "confirm").
+  - **Scope:**
+    - Applies to all agentic tasks involving multiple steps
+    - Applies especially to high-risk operations, including:
+      - System-level changes (OS, configs, services)
+      - Batch operations
+      - Irreversible actions (e.g., deletion, overwrite, uninstall)
+- [x] **File operations:** Rules for creating, modifying, or deleting files
+- [x] **Git operations:** Rules for Git commits, pushes, and branch management
+  - **Git Operations Restriction:** Never push or commit changes to GitHub autonomously.
+  - **Requirement:** All Git commits and pushes must be performed manually by Jimmy after review and verification.
+  - **Exception:** Only proceed with GitHub operations if explicitly instructed with phrases such as "push to git" or "push to github".
+- [x] **Process management:** Rules for running background processes
 
 ### 4.3 Resource Management
 - [ ] **API usage:** Rules for using external APIs or services
@@ -135,6 +149,7 @@ This file contains custom rules, preferences, and protocols established by Jimmy
 | Version | Date | Changes | Approved By |
 |---------|------|---------|-------------|
 | 1.0 | 2026-04-21 | Initial template creation | Jimmy |
+| 1.1 | 2026-04-21 | Added two critical rules: 1) Git Operations Restriction, 2) Agentic Task Execution Protocol | Jimmy |
 | | | | |
 
 ### Rule Update Process
