@@ -12,7 +12,7 @@ Use runtime-provided startup context first.
 
 That context may already include:
 
-- `AGENTS.md`, `SOUL.md`, and `USER.md`
+- `AGENTS.md`, `SOUL.md`, `USER.md`, and `RULES.md`
 - recent daily memory such as `memory/YYYY-MM-DD.md`
 - `MEMORY.md` when this is the main session
 
@@ -195,6 +195,7 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 - Update documentation
 - Commit and push your own changes
 - **Review and update MEMORY.md** (see below)
+- **Check for updates to RULES.md** and adapt behavior accordingly
 
 ### 🔄 Memory Maintenance (During Heartbeats)
 
